@@ -1,19 +1,19 @@
 
 const mc = require('minecraft-protocol');
 
-// Налаштування підключення до сервера
+// Connection 
 const options = {
-  host: 'moonfish.aternos.host', // адреса вашого сервера Minecraft
-  port: 64173,       // стандартний порт для Minecraft
-  username: 'BoBeR',   // ім'я користувача для бота
+  host: 'localhost', // your ip
+  port: 35565,       // your port
+  username: 'Bot',   // bot nickname
   auth: 'offline',
-  version: '1.21.1'  // версія гри
+  version: '1.21.1'  // game version of server
 };
 
-// Створення клієнта
+// creating client
 const client = mc.createClient(options)
 
-// Обробник події при успішному підключенні
+// connection massage 
 client.on('connect', () => {
   console.log('Bot has connected to the server.');
 })
