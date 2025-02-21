@@ -5,7 +5,7 @@ const fs = require('fs');
 
 let bot;
 let minecraftClient = null;
-let isMinecraftBotConnected = false; // Новий прапор для відстеження стану підключення
+let isMinecraftBotConnected = false;
 
 function saveConfig() {
     fs.writeFile('./config.js', `module.exports = ${JSON.stringify(config, null, 2)}`, (err) => {
@@ -111,7 +111,7 @@ function initializeBot(token) {
                 });
                 minecraftClient.on('end', () => {
                     minecraftClient = null;
-                    isMinecraftBotConnected = false; // Скидаємо прапор, коли з'єднання завершено
+                    isMinecraftBotConnected = false;
                     ctx.reply('Minecraft бот відключився від сервера.');
                     console.log('Minecraft bot has disconnected from the server.');
                 });
