@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^18.0.6",
-    "minecraft-protocol": "^1.51.0",
-    "mineflayer": "^4.23.0"
+    "minecraft-protocol": "^1.54.0",
+    "mineflayer": "^4.23.0",
+    "telegraf": "^4.16.3"
   }
 }
