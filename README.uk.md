@@ -110,5 +110,5 @@ McBot/
 
 ## Ліцензія
 
-Цей проєкт поширюється під ліцензією GNU Affero General Public License v3.0 (AGPL-3.0).
+Цей проєкт поширюється під ліцензією Apache License 2.0.
 Повний текст ліцензії доступний у файлі [LICENSE](LICENSE).
